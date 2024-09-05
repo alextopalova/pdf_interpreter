@@ -3,5 +3,5 @@
 Navigate to the repository and then execute the following instructions:
 ```bash
 docker build -t pdf-translator .
-docker run -v <Path_to_files>:/data pdf-translator /data
+docker run -v <local path to files to translate>:/data -v <local path to save translated files>:/processed_data pdf-translator /data
 
