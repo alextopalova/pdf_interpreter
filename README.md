@@ -3,8 +3,10 @@
 Navigate to the repository and then execute the following instructions:
 ```bash
 docker build -t pdf-translator .
+```
 ```bash
 docker run -v <local path to files to translate>:/data -v <local path to save translated files>:/processed_data pdf-translator /data
+```
 
 Documents in these language might not need to get interpreted, as copilots understand them:
 Chinese (Simplified) (zh-CN)
